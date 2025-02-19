@@ -51,10 +51,47 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#burger_menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu is-open">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close">Close</button>
+          <nav class="mobile-menu-nav">
+            <ul>
+              <li>Studio</li>
+              <li>Portfolio</li>
+              <li>Contacts</li>
+            </ul>
+          </nav>
+          <address class="mobile-menu-address">
+            <ul class="mobile-menu-list">
+              <li>
+                <a href="mailto:info@devstudio.com" class="mobile-menu-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+110001111111" class="mobile-menu-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
       </div>
     </header>
 
-    <main>
+    <main class="hidden">
       <section class="section">
         <div class="container section-container">
           <h1 class="head-title">Effective Solutions for Your Business</h1>
@@ -62,7 +99,7 @@
         </div>
       </section>
 
-      <section class="features-section">
+      <section class="features-section hidden">
         <div class="container">
           <h2 class="visually-hidden">Features</h2>
 
@@ -127,7 +164,7 @@
         </div>
       </section>
 
-      <section class="section-three">
+      <section class="section-three hidden">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
 
@@ -304,7 +341,7 @@
         </div>
       </section>
 
-      <section class="portfolio-section">
+      <section class="portfolio-section hidden">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
 
@@ -433,7 +470,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="container footer-stile">
         <div class="footer-link-text">
           <a class="logo-link link-footer" href="./index.html"
@@ -508,7 +545,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop is-open hidden">
       <div class="modal">
         <button class="modal-button" type="button">
           <svg width="8" height="8" class="modal-icon">
