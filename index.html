@@ -3,35 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEBSTUDIO</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <title>WEBSTUDIO</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-
   <body>
     <header class="page-header">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="logo-link header-logo" href="./index.html">
-            Web<span class="span-header">Studio</span></a
-          >
+            Web<span class="span-header">Studio</span>
+          </a>
 
           <ul class="nav-list">
-            <li>
-              <a class="nav-link current" href="./index.html">Studio</a>
-            </li>
+            <li><a class="nav-link current" href="./index.html">Studio</a></li>
             <li><a class="nav-link" href="">Portfolio</a></li>
             <li><a class="nav-link" href="">Contacts</a></li>
           </ul>
@@ -51,47 +45,55 @@
             </li>
           </ul>
         </address>
-        <button class="burger-btn" type="button">
-          <svg class="burger-icon" width="24" height="24">
-            <use href="./images/icons.svg#burger_menu"></use>
+
+        <button
+          class="mobile-menu-btn"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="32" height="22" viewBox="0 0 32 22" fill="#2E2F42">
+            <rect width="32" height="2" />
+            <rect y="10" width="32" height="2" />
+            <rect y="20" width="32" height="2" />
           </svg>
         </button>
       </div>
-      <div class="mobile-menu is-open">
-        <div class="container mobile-menu-container">
-          <button class="mobile-menu-close">Close</button>
-          <nav class="mobile-menu-nav">
-            <ul>
-              <li>Studio</li>
-              <li>Portfolio</li>
-              <li>Contacts</li>
-            </ul>
-          </nav>
-          <address class="mobile-menu-address">
-            <ul class="mobile-menu-list">
-              <li>
-                <a href="mailto:info@devstudio.com" class="mobile-menu-link"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li>
-                <a href="tel:+110001111111" class="mobile-menu-link"
-                  >+11 (000) 111-11-11</a
-                >
-              </li>
-            </ul>
-          </address>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+
+      <div class="mobile-menu" id="mobile-menu">
+        <button class="mobile-menu-close">
+          <svg width="8" height="8" viewBox="0 0 8 8">
+            <path d="M7 1L1 7M1 1L7 7" stroke="#2E2F42" stroke-width="2" />
+          </svg>
+        </button>
+
+        <nav class="mobile-menu-nav">
+          <ul class="mobile-menu-list">
+            <li><a href="./index.html" class="mobile-menu-link">Studio</a></li>
+            <li><a href="" class="mobile-menu-link">Portfolio</a></li>
+            <li><a href="" class="mobile-menu-link">Contacts</a></li>
           </ul>
-        </div>
+        </nav>
+
+        <address class="mobile-menu-address">
+          <ul class="mobile-menu-address-list">
+            <li>
+              <a href="tel:+110001111111" class="mobile-menu-address-link tel"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-menu-address-link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
       </div>
     </header>
 
-    <main class="hidden">
+    <main>
       <section class="section">
         <div class="container section-container">
           <h1 class="head-title">Effective Solutions for Your Business</h1>
@@ -99,10 +101,9 @@
         </div>
       </section>
 
-      <section class="features-section hidden">
+      <section class="features-section">
         <div class="container">
           <h2 class="visually-hidden">Features</h2>
-
           <ul class="section-list">
             <li class="section-features-item">
               <div class="features-icons">
@@ -110,9 +111,7 @@
                   <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
               </div>
-              <h3 class="section-subtitle section-subtitle-distance">
-                Strategy
-              </h3>
+              <h3 class="section-subtitle">Strategy</h3>
               <p class="section-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
@@ -124,9 +123,7 @@
                   <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
               </div>
-              <h3 class="section-subtitle section-subtitle-distance">
-                Punctuality
-              </h3>
+              <h3 class="section-subtitle">Punctuality</h3>
               <p class="section-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
@@ -138,9 +135,7 @@
                   <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
               </div>
-              <h3 class="section-subtitle section-subtitle-distance">
-                Diligence
-              </h3>
+              <h3 class="section-subtitle">Diligence</h3>
               <p class="section-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
@@ -152,9 +147,7 @@
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg>
               </div>
-              <h3 class="section-subtitle section-subtitle-distance">
-                Technologies
-              </h3>
+              <h3 class="section-subtitle">Technologies</h3>
               <p class="section-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -164,17 +157,16 @@
         </div>
       </section>
 
-      <section class="section-three hidden">
+      <section class="section-three">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
-
           <ul class="team-list">
             <li class="section-item">
               <img
                 src="./images/img-1-1.jpg"
                 alt="Mark Guerrero"
-                height="260"
                 width="264"
+                height="260"
               />
               <div class="employer-container">
                 <h3 class="section-subtitle">Mark Guerrero</h3>
@@ -215,8 +207,8 @@
               <img
                 src="./images/img-1-2.jpg"
                 alt="Tom Ford"
-                height="260"
                 width="264"
+                height="260"
               />
               <div class="employer-container">
                 <h3 class="section-subtitle">Tom Ford</h3>
@@ -257,8 +249,8 @@
               <img
                 src="./images/img-1-3.jpg"
                 alt="Camila Garcia"
-                height="260"
                 width="264"
+                height="260"
               />
               <div class="employer-container">
                 <h3 class="section-subtitle">Camila Garcia</h3>
@@ -299,8 +291,8 @@
               <img
                 src="./images/img-1-4.jpg"
                 alt="Daniel Wilson"
-                height="260"
                 width="264"
+                height="260"
               />
               <div class="employer-container">
                 <h3 class="section-subtitle">Daniel Wilson</h3>
@@ -341,19 +333,13 @@
         </div>
       </section>
 
-      <section class="portfolio-section hidden">
+      <section class="portfolio-section">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
-
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="image-container">
-                <img
-                  class="portfolio-image"
-                  src="./images/img-2-1.jpg"
-                  alt="Banking App"
-                  width="360"
-                />
+                <img src="./images/img-2-1.jpg" alt="Banking App" width="360" />
                 <p class="portfolio-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -418,7 +404,6 @@
                   · Cloud Storage App
                 </p>
               </div>
-
               <div class="add-info">
                 <h3 class="section-subtitle portfolio-subtitle">
                   Taxi Service
@@ -470,12 +455,13 @@
         </div>
       </section>
     </main>
-    <footer class="footer hidden">
+
+    <footer class="footer">
       <div class="container footer-stile">
         <div class="footer-link-text">
-          <a class="logo-link link-footer" href="./index.html"
-            >Web<span class="span-footer">Studio</span></a
-          >
+          <a class="logo-link link-footer" href="./index.html">
+            Web<span class="span-footer">Studio</span>
+          </a>
           <p class="footer-text">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
@@ -517,15 +503,12 @@
         <div class="form-container">
           <p class="form-container-text">Subscribe</p>
           <form action="#" class="form-main">
-            <label for="email" class="form-label">
-              <input
-                type="email"
-                name="email"
-                class="form-input"
-                id="email"
-                placeholder="E-mail"
-              />
-            </label>
+            <input
+              type="email"
+              name="email"
+              class="form-input"
+              placeholder="E-mail"
+            />
             <button type="submit" class="form-button">
               Subscribe
               <svg width="24" height="24" class="button-form-icon">
@@ -535,99 +518,8 @@
           </form>
         </div>
       </div>
-      <div class="backdrop">
-        <div class="modal">
-          <button class="modal-button">
-            <svg width="8" height="8" class="modal-icon">
-              <use href="./images/icons.svg#icon-close" class=""></use>
-            </svg>
-          </button>
-        </div>
-      </div>
     </footer>
-    <div class="backdrop is-open hidden">
-      <div class="modal">
-        <button class="modal-button" type="button">
-          <svg width="8" height="8" class="modal-icon">
-            <use href="./images/icons.svg#icon-close" class=""></use>
-          </svg>
-        </button>
-        <p class="modal-window-text">
-          Leave your contacts and we will call you back
-        </p>
-        <form action="#">
-          <div class="modal-form-stiles">
-            <label for="user-name" class="modal-window-label">Name</label>
-            <div class="user-name-stiles">
-              <input
-                type="text"
-                id="user-name"
-                name="user-name"
-                class="input-user"
-              />
-              <svg width="18" height="24" class="user-name-icon">
-                <use href="./images/icons.svg#icon-person"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="modal-form-stiles">
-            <label for="phone-number" class="modal-window-label">Phone</label>
-            <div class="user-name-stiles">
-              <input
-                type="tel"
-                id="phone-number"
-                name="phone-number"
-                class="input-user"
-              />
-              <svg width="18" height="24" class="user-name-icon">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="modal-form-stiles">
-            <label for="user-email" class="modal-window-label">Email</label>
-            <div class="user-name-stiles">
-              <input
-                type="email"
-                id="user-email"
-                name="user-email"
-                class="input-user"
-              />
-              <svg width="18" height="24" class="user-name-icon">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="form-comment">
-            <label for="user-comment" class="modal-window-label">Comment</label>
-            <textarea
-              name="user-comment"
-              id="user-comment"
-              placeholder="Text input"
-              class="textarea-stiles"
-            ></textarea>
-          </div>
-          <div class="checkbox-container">
-            <input
-              id="user-privacy"
-              type="checkbox"
-              value="true"
-              name="user-privacy"
-              class="checkbox-input visually-hidden"
-            />
-            <label for="user-privacy" class="checkbox-privacy-label">
-              <span class="checkbox-lable-span">
-                <svg width="10" height="8" class="checkbox-icon">
-                  <use href="./images/icons.svg#icon-check"></use>
-                </svg>
-              </span>
-              I accept the terms and conditions of the
-              <a href="#" class="textarea-link">Privacy Policy</a>
-            </label>
-          </div>
-          <button class="form-button-bottom">Send</button>
-        </form>
-      </div>
-    </div>
+
+    <script src="/script.js"></script>
   </body>
 </html>
