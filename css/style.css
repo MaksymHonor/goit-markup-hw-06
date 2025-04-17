@@ -70,14 +70,15 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
 }
 
 .header-nav {
   display: flex;
   align-items: center;
 }
-
+.logo-studio {
+  padding: 16px 0px 16px 16px;
+}
 .logo-link {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -86,7 +87,6 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin-right: 76px;
 }
 
 .span-header {
@@ -175,6 +175,7 @@ button {
 }
 
 .mobile-menu-address-link {
+  font-weight: 500;
   font-style: normal;
   font-size: 20px;
   line-height: 1.2;
@@ -184,8 +185,11 @@ button {
 }
 
 .mobile-menu-address-link.tel {
-  font-size: 24px;
+  font-size: 20px;
   color: #4d5ae5;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 /* Hero Section */
@@ -196,7 +200,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office-mob-1x.jpg);
+    url(../images/People-bg-mob.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -204,23 +208,24 @@ button {
   text-align: center;
 }
 
-@media (min-resolution: 2dppx) {
+@media (min-resolution: 2x) {
   .section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office-mob-2x.jpg);
+      url(../images/People-bg-mob-2x.png);
   }
 }
 
 .head-title {
-  max-width: 288px;
+  max-width: 216px;
   margin: 0 auto 72px;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: #ffffff;
+  font-weight: 700px;
 }
 
 .head-button {
@@ -261,13 +266,13 @@ button {
 }
 
 .section-subtitle {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-bottom: 8px;
+  text-align: left;
 }
 
 .section-text {
@@ -285,11 +290,11 @@ button {
 }
 
 .section-title {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
   color: #2e2f42;
   margin-bottom: 72px;
 }
@@ -452,6 +457,7 @@ button {
   display: flex;
   justify-content: center;
   gap: 16px;
+  margin-right: auto;
 }
 
 .footer-list-item {
@@ -825,16 +831,16 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office-tab-1x.jpg);
+      url(../images/People-bg-tab.png);
   }
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: 2x) {
     .section {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/people-office-tab-2x.jpg);
+        url(../images/People-bg-tab-2x.png);
     }
   }
 
@@ -855,9 +861,14 @@ button {
   .section-features-item {
     width: calc((100% - 24px) / 2);
   }
-
-  .section-subtitle {
-    text-align: left;
+  .subtitle-name {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
   }
 
   .team-list {
@@ -878,6 +889,9 @@ button {
   .portfolio-item {
     width: calc((100% - 24px) / 2);
   }
+  .portfolio-subtitle {
+    text-align: left;
+  }
 
   .footer-stile {
     flex-direction: row;
@@ -886,10 +900,6 @@ button {
     row-gap: 72px;
     max-width: 584px;
     margin: 0 auto;
-  }
-
-  .footer-link-text {
-    text-align: left;
   }
 
   .footer-text {
@@ -903,6 +913,9 @@ button {
   .form-main {
     flex-direction: row;
     gap: 24px;
+  }
+  .form-container-text {
+    text-align: left;
   }
 
   .form-input {
@@ -939,16 +952,16 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office-desk-1x.jpg);
+      url(../images/people-office-bg-desctop.jpg);
   }
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: 2x) {
     .section {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/people-office-desk-2x.jpg);
+        url(../images/people-office-bg-desktop-2x.png);
     }
   }
 
@@ -982,6 +995,7 @@ button {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    text-align: center;
   }
 
   .section-text {
@@ -1007,7 +1021,9 @@ button {
   .portfolio-item {
     width: calc((100% - 48px) / 3);
   }
-
+  .portfolio-subtitle {
+    text-align: left;
+  }
   .footer {
     padding: 100px 0;
   }
@@ -1048,5 +1064,8 @@ button {
   .modal {
     width: 408px;
     min-height: 584px;
+  }
+  .form-container-text {
+    text-align: left;
   }
 }
