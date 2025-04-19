@@ -797,6 +797,11 @@ button {
     display: none;
   }
 
+  .portfolio-item img {
+    width: 356px;
+    height: 300px;
+  }
+
   .nav-list {
     display: flex;
     gap: 40px;
@@ -978,6 +983,11 @@ button {
   .address-list {
     flex-direction: row;
     gap: 40px;
+  }
+
+  .portfolio-item img {
+    width: 360px;
+    height: 300px;
   }
 
   .address-link {
