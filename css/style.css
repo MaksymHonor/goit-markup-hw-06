@@ -77,7 +77,7 @@ button {
   align-items: center;
 }
 .logo-studio {
-  padding: 16px 0px 16px 16px;
+  padding: 16px 0px;
 }
 .logo-link {
   font-family: "Raleway", sans-serif;
@@ -156,6 +156,9 @@ button {
   letter-spacing: 0.02em;
   color: #2e2f42;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu-list li:not(:last-child) {
+  margin-bottom: 40px; /* Додаємо відступи між елементами */
 }
 .mobile-menu-social-list {
   display: flex;
@@ -273,10 +276,16 @@ button {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  text-align: left;
+}
+.features-subtitle {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
 .section-text {
@@ -284,7 +293,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 /* Team Section */
@@ -365,7 +374,29 @@ button {
   flex-direction: column;
   gap: 48px;
 }
-
+.subtitle-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+.employe-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #434455;
+}
+.section-prescription {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
 .portfolio-item {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -896,6 +927,9 @@ button {
   .portfolio-subtitle {
     text-align: left;
   }
+  .features-subtitle {
+    text-align: left;
+  }
 
   .footer-stile {
     flex-direction: row;
@@ -908,6 +942,9 @@ button {
 
   .footer-text {
     margin: 0;
+  }
+  .footer-link-text {
+    text-align: left;
   }
 
   .footer-social-media-text {
@@ -999,7 +1036,7 @@ button {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    text-align: center;
+    text-align: left;
   }
 
   .section-text {
